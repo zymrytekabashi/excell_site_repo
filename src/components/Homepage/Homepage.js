@@ -1,4 +1,4 @@
-import './Hero.css';
+import './Homepage.css';
 import { Grid, Icon, Image, Button } from 'semantic-ui-react';
 import Goxl from '../../assets/images/g-goxl@2x.jpg';
 import London from '../../assets/images/london@2x.jpg';
@@ -8,7 +8,7 @@ import City from '../../assets/images/city.jpg';
 import Work from '../../assets/images/work.jpg';
 
 
-const Hero = () => {
+const Homepage = () => {
     return (
         <>
             <div className="parallax">
@@ -103,4 +103,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default Homepage;
