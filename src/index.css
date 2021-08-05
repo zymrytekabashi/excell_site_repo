@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Avenir-Light;
+  src: url(./fonts/Avenir-Light.ttf);
+}
+@font-face {
+  font-family: Avenir-Regular;
+  src: url(./fonts/Avenir-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: Avenir-Regular, Helvetica, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+}

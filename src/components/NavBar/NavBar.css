@@ -1,0 +1,30 @@
+div.ui.inverted.segment {
+  margin: 0;
+  border-radius: 0;
+  color: #fff;
+  background-color: #000;
+}
+
+.ui.secondary.inverted.pointing.menu .item {
+  font-family: Avenir-Light, Courier, monospace !important;
+  letter-spacing: 4px;
+}
+
+.ui.secondary.inverted.pointing.menu .item {
+  text-transform: uppercase;
+}
+
+.ui.secondary.inverted.pointing.menu .active.item {
+  border: none;
+}
+
+.ui.secondary.inverted.pointing.menu {
+  padding: 0 30px;
+}
+
+div.ui.inverted.segment {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
