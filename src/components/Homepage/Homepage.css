@@ -3,11 +3,11 @@
   --sky-gray: #878787;
 }
 .parallax {
-  background: linear-gradient(#72593da6 30%, var(--midnight-blue) 70%),
+  background: linear-gradient(#72593da6, var(--midnight-blue)),
     url("../../assets/images/hero-bg.jpg");
-  /* background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -90,7 +90,7 @@ i.arrow.right.icon {
 }
 
 .images {
-  background: linear-gradient(var(--midnight-blue) 50%, #fff 50%);
+  background: linear-gradient(var(--midnight-blue), #fff);
   display: block;
 }
 
@@ -147,40 +147,6 @@ i.arrow.right.icon {
   justify-content: center;
 }
 
-.botonImagen {
-  position: absolute;
-  top: 22.5px;
-  left: calc(50vw - 20px);
-  width: 80px;
-}
-.botonImagenCont {
-  height: 20vh;
-}
-
-.business {
-  text-transform: uppercase;
-}
-
-.first {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.second h2 {
-  font-size: 3.7em;
-  font-family: Avenir-Light;
-  text-transform: uppercase;
-  font-weight: 200;
-}
-
-.column p {
-  padding-right: 6em;
-}
-
-.column {
-  padding: 30px auto;
-}
-
 .pilot {
   position: absolute;
   top: 20%;
@@ -191,13 +157,4 @@ i.arrow.right.icon {
   position: absolute;
   top: 10%;
   left: 40%;
-}
-
-.grid-color {
-  padding: 8em !important;
-}
-
-.reversed,
-.divided {
-  padding: 0 !important;
 }
