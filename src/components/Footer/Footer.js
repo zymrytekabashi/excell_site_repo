@@ -1,10 +1,11 @@
+
 import { Container, Grid, Icon, Image, Form, List, Segment } from 'semantic-ui-react';
 import './Footer.css';
 import Logo from '../../assets/images/excel_logo_white.svg';
 
 const Footer = () => {
     return (
-        <Container fluid>
+        <div className='footer-container'>
             <Grid columns='equal'>
                 <Grid.Row stretched>
                     <Grid.Column>
@@ -52,7 +53,7 @@ const Footer = () => {
                 </Grid.Row>
 
             </Grid>
-        </Container>
+        </div>
     )
 }
 

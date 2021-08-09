@@ -1,7 +1,3 @@
-.ui.fluid.container {
-  background-color: #000;
-  color: rgba(255, 255, 255, 0.788);
-}
 .ui.form .field > label {
   color: #fff !important;
   font-size: 16px !important;
@@ -45,4 +41,9 @@ div.ui.equal.width.grid p {
 
 .footer-icons i {
   padding-right: 60px;
+}
+
+.footer-container {
+  background-color: #000;
+  color: #fff;
 }

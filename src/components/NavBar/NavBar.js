@@ -1,6 +1,7 @@
 import { Menu, Segment, Icon, } from 'semantic-ui-react';
 import './NavBar.css';
-import Logo from '../../assets/images/excel_logo_white.svg'
+import Logo from '../../assets/images/excel_logo_white.svg';
+import { NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -11,12 +12,15 @@ const NavBar = () => {
                 <Menu.Menu position='right'>
                     <Menu.Item
                         name='home'
+                        as={NavLink} to='/'
                     />
                     <Menu.Item
                         name='about'
+                        as={NavLink} to='/about'
                     />
                     <Menu.Item
                         name='contact'
+                        as={NavLink} to='/contact'
                     />
                 </Menu.Menu>
 
