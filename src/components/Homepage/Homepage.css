@@ -3,12 +3,9 @@
   --sky-gray: #878787;
 }
 .parallax {
-  background: linear-gradient(#72593da6, var(--midnight-blue)),
-    url("../../assets/images/hero-bg.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(#80572952 43%, var(--midnight-blue) 57%);
+
+  position: relative;
 }
 
 .parallax h3 {
@@ -90,12 +87,12 @@ i.arrow.right.icon {
 }
 
 .images {
-  background: linear-gradient(var(--midnight-blue), #fff);
+  background: linear-gradient(var(--midnight-blue) 50%, #fff 50%);
   display: block;
 }
 
 .about-section {
-  background: linear-gradient(#fff, var(--sky-gray));
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0.555));
   color: #000;
   padding: 8em !important;
 }
@@ -113,8 +110,7 @@ i.arrow.right.icon {
   border: 1px solid rgba(0, 0, 0, 0.322);
   border-radius: 30px;
   text-transform: uppercase;
-  padding-right: 40px;
-  padding-left: 40px;
+  width: 12vw;
   color: #000;
   font-size: 13px;
 }
@@ -126,7 +122,7 @@ i.arrow.right.icon {
 }
 
 .gallery {
-  background: linear-gradient(#fff, var(--sky-gray));
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0.555));
 }
 .gallery,
 .gallery-images {
@@ -157,4 +153,13 @@ i.arrow.right.icon {
   position: absolute;
   top: 10%;
   left: 40%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

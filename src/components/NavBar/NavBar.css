@@ -18,6 +18,7 @@ div.ui.inverted.segment {
 
 .ui.secondary.inverted.pointing.menu .active.item {
   border: none;
+  padding-bottom: 15px;
 }
 
 .ui.secondary.inverted.pointing.menu {

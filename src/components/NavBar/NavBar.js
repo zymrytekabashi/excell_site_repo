@@ -12,7 +12,7 @@ const NavBar = () => {
                 <Menu.Menu position='right'>
                     <Menu.Item
                         name='home'
-                        as={NavLink} to='/'
+                        as={NavLink} to='/' exact
                     />
                     <Menu.Item
                         name='about'
