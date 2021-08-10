@@ -4,4 +4,5 @@ body {
 
 .ui.fluid.container {
   background-color: #fff !important;
+  width: 100vw !important;
 }

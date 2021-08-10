@@ -8,11 +8,11 @@ import './Contact.css';
 
 const Contact = () => {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 500 });
     }, [])
     return (
         <>
-            <video autoPlay loop muted >
+            <video autoPlay loop muted className='video'>
                 <source src={Hero_Video} />
             </video>
             <div className="parallax"  >

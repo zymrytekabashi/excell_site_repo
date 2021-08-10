@@ -1,5 +1,5 @@
 import './Homepage.css';
-import { Grid, Icon, Image, Button } from 'semantic-ui-react';
+import { Grid, Icon, Image, Button, Container, ImageGroup } from 'semantic-ui-react';
 import Goxl from '../../assets/images/g-goxl@2x.jpg';
 import London from '../../assets/images/london@2x.jpg';
 import Pilot from '../../assets/images/pilot@2x.jpg';
@@ -13,7 +13,7 @@ import 'aos/dist/aos.css';
 
 const Homepage = () => {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 500 });
     }, [])
     return (<>
         <video autoPlay loop muted className='video'>
@@ -23,26 +23,18 @@ const Homepage = () => {
             <Grid padded className="hero-section" stackable>
                 <Grid.Row >
                     <Grid.Column columns={1} className="hero-content">
-                        <h3 data-aos='fade-up'>Precision <span>& Excellence </span> <span>in the Skies </span> </h3>
+                        <h1 data-aos='fade-up'>Precision <span>& Excellence </span> <span>in the Skies </span> </h1>
                     </Grid.Column>
                 </Grid.Row>
-                <Grid.Row>
-                    <Grid.Column className='transformed-number-row'>
-                        <span className='number'>01</span></Grid.Column>
-                </Grid.Row>
+
                 <Grid.Row columns={2} className='three-dots-row' >
                     <Grid.Column className='divided-column' >
-                        <span className="dot"></span>
-                        <span className="dot"></span>
-                        <span className="dot"></span>
-                    </Grid.Column>
-                    <Grid.Column className='arrows'  >
-                        <Icon name='arrow left'></Icon>|<Icon name='arrow right'></Icon>
+
                     </Grid.Column>
 
                 </Grid.Row>
-                <Grid.Row columns={2} >
-                    <Grid.Column data-aos='fade-up'>
+                <Grid.Row columns={2} className='midnight-blue-section' >
+                    <Grid.Column data-aos='fade-up' className='paragraph-content'>
                         <p>Excel Helicopters provide charter flights from any UK. location. Whether business
                             or pleasure, helicopter charter or private helicopter hire is the most time-efficient
                             and memorable way to travel.
@@ -54,14 +46,14 @@ const Homepage = () => {
                 </Grid.Row>
             </Grid>
         </div>
-        <Grid>
-            <Grid.Row className="images">
-                <Image src={Goxl} alt='' size="medium" className="goxl" data-aos='fade-right' />
-                <Image src={Pilot} alt='' size="medium" className="pilot" data-aos='fade-up' />
-                <Image src={London} alt='' size="medium" className="london" data-aos='fade-left' />
-            </Grid.Row>
 
-        </Grid>
+        <div className="images" >
+            <Image src={Goxl} alt='' className="goxl" data-aos='fade-right' />
+            <Image src={Pilot} alt='' className="pilot" verticalAlign='bottom' data-aos='fade-up' />
+            <Image src={London} alt='' className="london" data-aos='fade-left' />
+        </div>
+
+
         <Grid className="about-section" stackable padded >
             <Grid.Row columns={3} >
                 <Grid.Column className="about-content"  >
@@ -96,15 +88,23 @@ const Homepage = () => {
                     </div>
                 </Grid.Column>
             </Grid.Row>
-            <Grid.Row className="gallery" columns={1}>
+
+        </Grid>
+        <Grid className="gallery-grid">
+            <Grid.Row className="gallery" >
+
                 <Icon name="instagram" size="huge" data-aos='zoom-in' />
+
                 <Image.Group className='gallery-images' size='medium'>
+
                     <Image src={Helicopter} alt='' data-aos='zoom-in' ></Image>
                     <Image src={City} alt='' data-aos='zoom-in'  ></Image>
                     <Image src={Work} alt='' data-aos='zoom-in' ></Image>
                     <Image src={Helicopter} alt='' data-aos='zoom-in'></Image>
 
                 </Image.Group>
+
+
             </Grid.Row>
         </Grid>
     </>)

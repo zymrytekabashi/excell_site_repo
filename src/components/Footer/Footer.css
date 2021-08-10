@@ -25,16 +25,13 @@ div.ui.button {
   font-weight: 100;
 }
 .footer-logo {
-  width: 14em;
+  width: 17em;
 }
 
 div.ui.segment {
   background-color: #000;
 }
 
-div.ui.equal.width.grid {
-  padding: 3em 8em;
-}
 div.ui.equal.width.grid p {
   color: #5f6262;
 }
@@ -46,4 +43,9 @@ div.ui.equal.width.grid p {
 .footer-container {
   background-color: #000;
   color: #fff;
+  padding: 6em 11.5em;
+}
+
+.footer-grid {
+  padding-right: 6em !important;
 }

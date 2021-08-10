@@ -6,7 +6,7 @@ import Logo from '../../assets/images/excel_logo_white.svg';
 const Footer = () => {
     return (
         <div className='footer-container'>
-            <Grid columns='equal'>
+            <Grid columns='equal' className='footer-grid'>
                 <Grid.Row stretched>
                     <Grid.Column>
                         <Segment> <Image src={Logo} alt='' className='footer-logo' />
@@ -21,6 +21,7 @@ const Footer = () => {
                     </Grid.Column>
                     <Grid.Column >
                         <Segment ></Segment>
+                        <Segment></Segment>
                         <Segment>
                             <p>+44 01708 688110 (24 hrs)</p>
                             <p>info@excelhelicopters.co.uk</p>
@@ -53,6 +54,7 @@ const Footer = () => {
                 </Grid.Row>
 
             </Grid>
+
         </div>
     )
 }
